@@ -1,6 +1,6 @@
 html{
   box-sizing: border-box;
-  font-family: arial, verdana;
+  font-family: 'Source Serif', tahoma, verdana;
   color: inherit;
 }
 body {
@@ -23,6 +23,12 @@ wrapper {
   display: grid;
   grid-gap: 1em;
 }
+
+/* social media bar */
+
+
+
+/* social media bar */
 
 
 /*  navBar styling */
@@ -49,7 +55,17 @@ wrapper {
 }
 .navBar a:hover {
   background: #0B0C10;
-  color: #C5C607;
+  color: #45A29E;
+}
+
+/* Trying to make barley swine site only show during a hover state */
+
+.navBar ul li ul li  {
+  display: none;
+}
+.navBar ul li:hover ul {
+  color: red !important;
+  display: block !important;
 }
 
 /* Top container styling */
