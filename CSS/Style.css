@@ -63,9 +63,13 @@ wrapper {
 .navBar ul li ul li  {
   display: none;
 }
-.navBar ul li:hover ul {
+.navBar ul li:nth-child(3):hover ul li {
   color: red !important;
-  display: block !important;
+  padding-top: 10px;
+  display: grid;
+  min-width: 22.5%;
+  position: absolute;
+  display: inline-grid !important;
 }
 
 /* Top container styling */
@@ -196,6 +200,14 @@ footer{
     text-align: center;
     margin: auto;
   }
+  .showcase h1 {
+    color: #000;
+    font-size: 1.8em;
+  }
+  .showcase p {
+    color: #000;
+    font-size: 1.1em;
+  }
 }
 
 @media(max-width: 500) {
@@ -204,5 +216,13 @@ footer{
     'showcase'
     'topBox-a'
     'topBox-b';
+  }
+  .showcase h1 {
+    color: #000;
+    font-size: 1.4em;
+  }
+  .showcase p {
+    color: #000;
+    font-size: 0.9em;
   }
 }
